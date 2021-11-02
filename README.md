@@ -1,5 +1,9 @@
 # music-notation-fe
 
+```
+https://github.com/0xfe/vexflow
+```
+
 ## Project setup
 ```
 npm install
