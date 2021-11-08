@@ -31,6 +31,28 @@ export default {
 
     let notes = [
       new VF.StaveNote({ clef: 'treble',
+        keys: ['e/5'],
+        duration: '8d' })
+        .addAccidental(0, new VF.Accidental('#'))
+        .addDotToAll(),
+      new VF.StaveNote({
+        clef: 'treble',
+        keys: ['b/4'],
+        duration: '16'
+      }).addAccidental(0, new VF.Accidental('b')),
+      new VF.StaveNote({ clef: 'treble',
+        keys: ['c/4'],
+        duration: '8' }),
+      new VF.StaveNote({ clef: 'treble',
+        keys: ['d/4'],
+        duration: '16' }),
+      new VF.StaveNote({ clef: 'treble',
+        keys: ['d/4'],
+        duration: '16' }),
+      new VF.StaveNote({ clef: 'treble',
+        keys: ['d/4'],
+        duration: 'q' }),
+      new VF.StaveNote({ clef: 'treble',
         keys: ['d/4'],
         duration: 'q' })
     ]
