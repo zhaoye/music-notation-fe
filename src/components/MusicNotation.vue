@@ -5,6 +5,7 @@
 
 <script>
 import Vex from 'vexflow'
+import { getRandomNote } from './note.js'
 
 export default {
   mounted (){
@@ -31,7 +32,7 @@ export default {
 
     let notes = [
       new VF.StaveNote({ clef: 'treble',
-        keys: ['d/4'],
+        keys: [getRandomNote().keys],
         duration: 'q' })
     ]
 
