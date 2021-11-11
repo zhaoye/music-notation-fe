@@ -4,4 +4,15 @@ module.exports = {
     : '/',
 
   outputDir: 'docs',
+  configureWebpack: config => {
+    return {
+      title: '识谱练习',
+      resolve: {
+        alias: {
+          '@': resolve('src')
+        }
+      },
+      plugins: []
+    }
+  } 
 }

@@ -1,5 +1,8 @@
 <template>
   <div>
+    <div>
+      <v-icon color="blue-grey">mdi-music-box-multiple-outline</v-icon> <span class="blue-grey--text">糖糖练习专用</span>
+    </div>
     <div id="boo"></div>
     <div class="text-center">
     <v-btn
@@ -10,8 +13,8 @@
         color="indigo"
         @click="onRefreshClick"
       >
-      <v-icon color="#9e9e9e">
-        mdi-heart
+      <v-icon>
+        mdi-refresh
       </v-icon>
     </v-btn>
     </div>
