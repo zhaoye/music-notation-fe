@@ -54,12 +54,19 @@ const getNoteByID = (id) => {
 }
 
 export const getRandomNote = () => {
-  const noteId = getRandomIntInclusive(1,7)
+  const level = getRandomIntInclusive(3,6)
+  console.log(level)
+  let noteId = null
+  if(level >= 4 && level <= 5){
+    noteId = getRandomIntInclusive(1,7)
+  }else if(level < 4){
+    noteId = getRandomIntInclusive(5,7)
+  }else if(level > 5){
+    noteId = getRandomIntInclusive(1, 2)
+  }
   console.log(noteId)
   const basicNote = getNoteByID(noteId)
   console.log(basicNote)
-  const level = getRandomIntInclusive(4,5)
-  console.log(level)
   return {
     keys: basicNote.note + '/' + level
   }

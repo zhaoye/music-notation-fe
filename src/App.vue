@@ -1,14 +1,10 @@
 <template>
   <v-app>
-    <v-navigation-drawer app>
-    </v-navigation-drawer>
     <v-main>
-      <v-container fluid>
+      <v-container>
         <music-notation/>
       </v-container>
     </v-main>
-    <v-footer app>
-    </v-footer>
   </v-app>
 </template>
 
